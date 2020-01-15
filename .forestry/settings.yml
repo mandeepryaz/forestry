@@ -3,7 +3,18 @@ new_page_extension: md
 auto_deploy: false
 admin_path: static/admin
 webhook_url: 
-sections: 
+sections:
+- type: heading
+  label: Heading
+- type: directory
+  path: src/pages
+  label: Directory
+  create: all
+  match: "**/*"
+- type: document
+  path: src/pages
+  label: Edit Document
+  match: "**/*"
 upload_dir: src/images
 public_path: "/uploads"
 front_matter_path: ''
